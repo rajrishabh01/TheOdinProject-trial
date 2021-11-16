@@ -1,0 +1,24 @@
+.one {
+    background-color:pink;
+    margin: 3em 10em 3em 10em;
+    padding: 1em 5em 1em 3em;
+    border: 3px solid blue;
+}
+
+.two {
+    color:black;
+    margin: 3em 3em 1em 3em;
+    border:1px solid brown;
+    padding:0%;
+    background-color: skyblue;
+    display: block;
+}
+
+.three {
+    color:black;
+    margin: 10em 5em 3em 50em;
+    background-color: burlywood;
+    border: 3px solid brown;
+    padding: 2em 2em 2em 2em;
+    text-align: right;
+}
