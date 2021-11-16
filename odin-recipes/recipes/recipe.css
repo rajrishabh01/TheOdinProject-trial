@@ -1,0 +1,14 @@
+#header-1 {
+    color : black;
+    background-color: orange;
+}
+
+.para-intro{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 56px;
+}
+
+*{
+    border: 2px solid blue;
+}

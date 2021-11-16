@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="recipe.css">
 </head>
+
 <body>
-    <h1 id="recipeName">Beer-Braised Pork Chopes</h1>
+    <div id="header-1">
+        <h1 id="recipeName">Beer-Braised Pork Chopes</h1>
+    </div>
     <img src="images/image.webp" alt="Delicious Pork" style="width:640px;height:360px">
 
-    <p>A Thanksgiving recipe for the ages!</p>
+    <div class="para-intro">
+        <p>A Thanksgiving recipe for the ages!</p>
+    </div>
 
-    <h2>Ingredients
+    <div class="ingredients">
+        <h2>Ingredients
+    </div>
+    <div class="steps second">
         <ul>
             <li>Pork</li>
             <li>Beer</li>
             <li>Haldi</li>
         </ul>
+    </div>
     </h2>
 
-    <h2>Steps
+
+    <style>
+        .steps.first {
+            color: yellow;
+            background-color: yellowgreen;
+        }
+
+        .steps.second {
+            color: blue;
+            background-color: yellowgreen;
+        }
+
+        #li {
+            color: red;
+        }
+    </style>
+    <div class="steps first">
+        <h2>Steps</h2>
+    </div>
+    <div style="color:blue; background-color: brown;">
         <ol>
             <li>Add pork to Haldi</li>
             <li>Pork now goes into beer and breadcrumbs</li>
             <li>Fry the pork now!</li>
-        </ol>
-    </h2>
+    </div>
+    </ol>
+    </div>
 
     <a href="../index.html">Back to homepage</a>
 </body>
+
 </html>
