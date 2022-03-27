@@ -1,13 +1,13 @@
 var choices = ["rock", "paper", "scissors"];
 
-
 var playerCount = 0;
 var computerCount = 0;
 
 function playGround() {
   for (let i = 0; i < 5; i++) {
-    var userInput = prompt("What's your choice?", "");
+    var userInputRaw = prompt("What's your choice?", "");
     var computersChoice = choices[Math.floor(Math.random() * choices.length)];
+    var userInput = userInputRaw.toLowerCase;
 
     if (computersChoice === userInput) {
       console.log("Try Again");
@@ -32,18 +32,43 @@ function playGround() {
     }
   }
 
-  resultOfPlay(computerCount, playerCount)
+  resultOfPlay(computerCount, playerCount);
 }
 
-function resultOfPlay(computerCount, playerCount){
+function resultOfPlay(computerCount, playerCount) {
+  if (computerCount > playerCount) {
+    console.log("You sucker!");
+  } else if (playerCount > computerCount) {
+    console.log("You Win!");
+  } else {
+    console.log("Another round?");
+  }
+}
 
-    if(computerCount > playerCount){
-        console.log("You sucker!")
-    } else if(playerCount > computerCount){
-        console.log("You Win!")
-    } else {
-        console.log("Another round?")
+//Another efficient way
+
+const weapons = {
+  rock: { strongTo: "scissors", weakTo: "paper" },
+  scissors: { strongTo: "paper", weakTo: "rock" },
+  paper: { strongTo: "rock", weakTo: "scissors" },
+};
+
+function playGroundEff(userInputEff, computersChoice) {
+  for (let i = 0; i < 5; i++) {
+    let userInputRawEff = prompt("What's your choice EFF? ", "");
+    let computersChoice = choices[Math.floor(Math.random() * choices.length)];
+    let userInputEff = userInputRawEff.toLowerCase();
+
+    if (weapons[computersChoice].strongTo === userInputEff) {
+      console.log("Eff you lose");
+    } else if (weapons[computersChoice].weakTo === userInputEff) {
+      console.log("EFF you win");
     }
+  }
+
+  resultOfPlay(computerCount, playerCount);
 }
 
-playGround();
+//playGround();
+
+playGroundEff();
