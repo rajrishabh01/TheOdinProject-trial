@@ -7,7 +7,7 @@ function playGround() {
   for (let i = 0; i < 5; i++) {
     var userInputRaw = prompt("What's your choice?", "");
     var computersChoice = choices[Math.floor(Math.random() * choices.length)];
-    var userInput = userInputRaw.toLowerCase;
+    var userInput = userInputRaw.toLowerCase();
 
     if (computersChoice === userInput) {
       console.log("Try Again");
